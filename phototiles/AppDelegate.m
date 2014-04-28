@@ -7,15 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"
+#import "FlickrManager.h"
+#import "URLImageFileCache.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.photoTilesController = [[PhotoTilesController alloc] init];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:self.photoTilesController];
+    self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
+    
+    //test
+    [[URLImageFileCache sharedInstance] clearCache];
+    
+    //Set up reachability notifier
+    
+    Reachability* reach = [Reachability reachabilityWithHostname:@"www.flickr.com"];
+    [reach startNotifier];
+    
+    //Get some photos (calls to get photos when inits)
+    
+    [FlickrManager sharedInstance];
+    
     return YES;
 }
 

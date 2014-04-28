@@ -19,6 +19,19 @@
 		33ADDB7D190C416E0056EE16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADDB65190C416E0056EE16 /* UIKit.framework */; };
 		33ADDB85190C416E0056EE16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33ADDB83190C416E0056EE16 /* InfoPlist.strings */; };
 		33ADDB87190C416E0056EE16 /* phototilesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDB86190C416E0056EE16 /* phototilesTests.m */; };
+		33ADDBA4190C47210056EE16 /* PhotoTilesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBA3190C47210056EE16 /* PhotoTilesController.m */; };
+		33ADDBA8190C53CD0056EE16 /* URLImageFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBA6190C53CD0056EE16 /* URLImageFileCache.m */; };
+		33ADDBAF190C53F80056EE16 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBAA190C53F80056EE16 /* NSString+MD5.m */; };
+		33ADDBB0190C53F80056EE16 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBAD190C53F80056EE16 /* Reachability.m */; };
+		33ADDBB4190C5FD90056EE16 /* PhotoTileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBB3190C5FD90056EE16 /* PhotoTileCell.m */; };
+		33ADDBB8190C6AA90056EE16 /* FlickrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBB7190C6AA90056EE16 /* FlickrManager.m */; };
+		33ADDBBD190C6E390056EE16 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBBC190C6E390056EE16 /* FlickrPhoto.m */; };
+		33ADDBC0190C6F270056EE16 /* FlickrPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBBF190C6F270056EE16 /* FlickrPhotos.m */; };
+		33ADDBC1190C7FFC0056EE16 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADDB98190C42110056EE16 /* libRestKit.a */; };
+		33ADDBC3190C80300056EE16 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADDBC2190C80300056EE16 /* MobileCoreServices.framework */; };
+		33ADDBC5190C80370056EE16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADDBC4190C80370056EE16 /* SystemConfiguration.framework */; };
+		33ADDBC8190DAC010056EE16 /* ReachabilityOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBC6190DAC010056EE16 /* ReachabilityOverlayView.m */; };
+		33ADDBCB190DE1D80056EE16 /* UIImage+Luminance.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADDBCA190DE1D80056EE16 /* UIImage+Luminance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +41,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 33ADDB5D190C416E0056EE16;
 			remoteInfo = phototiles;
+		};
+		33ADDB97190C42110056EE16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33ADDB90190C42100056EE16 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		33ADDB99190C42110056EE16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33ADDB90190C42100056EE16 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		33ADDB9B190C42110056EE16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33ADDB90190C42100056EE16 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		33ADDB9D190C42110056EE16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33ADDB90190C42100056EE16 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +89,31 @@
 		33ADDB82190C416E0056EE16 /* phototilesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "phototilesTests-Info.plist"; sourceTree = "<group>"; };
 		33ADDB84190C416E0056EE16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		33ADDB86190C416E0056EE16 /* phototilesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phototilesTests.m; sourceTree = "<group>"; };
+		33ADDB90190C42100056EE16 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = phototiles/ThirdPartyAPI/RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		33ADDBA2190C47210056EE16 /* PhotoTilesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTilesController.h; sourceTree = "<group>"; };
+		33ADDBA3190C47210056EE16 /* PhotoTilesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTilesController.m; sourceTree = "<group>"; };
+		33ADDBA5190C53980056EE16 /* Notifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		33ADDBA6190C53CD0056EE16 /* URLImageFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageFileCache.m; sourceTree = "<group>"; };
+		33ADDBA7190C53CD0056EE16 /* URLImageFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageFileCache.h; sourceTree = "<group>"; };
+		33ADDBAA190C53F80056EE16 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "ThirdPartyAPI/NSString+MD5.m"; sourceTree = "<group>"; };
+		33ADDBAC190C53F80056EE16 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		33ADDBAD190C53F80056EE16 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		33ADDBAE190C53F80056EE16 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "ThirdPartyAPI/NSString+MD5.h"; sourceTree = "<group>"; };
+		33ADDBB1190C54730056EE16 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		33ADDBB2190C5FD90056EE16 /* PhotoTileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTileCell.h; sourceTree = "<group>"; };
+		33ADDBB3190C5FD90056EE16 /* PhotoTileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTileCell.m; sourceTree = "<group>"; };
+		33ADDBB6190C6AA90056EE16 /* FlickrManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrManager.h; sourceTree = "<group>"; };
+		33ADDBB7190C6AA90056EE16 /* FlickrManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrManager.m; sourceTree = "<group>"; };
+		33ADDBBB190C6E390056EE16 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
+		33ADDBBC190C6E390056EE16 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
+		33ADDBBE190C6F270056EE16 /* FlickrPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotos.h; sourceTree = "<group>"; };
+		33ADDBBF190C6F270056EE16 /* FlickrPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotos.m; sourceTree = "<group>"; };
+		33ADDBC2190C80300056EE16 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		33ADDBC4190C80370056EE16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		33ADDBC6190DAC010056EE16 /* ReachabilityOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityOverlayView.m; sourceTree = "<group>"; };
+		33ADDBC7190DAC010056EE16 /* ReachabilityOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityOverlayView.h; sourceTree = "<group>"; };
+		33ADDBC9190DE1D80056EE16 /* UIImage+Luminance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Luminance.h"; sourceTree = "<group>"; };
+		33ADDBCA190DE1D80056EE16 /* UIImage+Luminance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Luminance.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33ADDBC5190C80370056EE16 /* SystemConfiguration.framework in Frameworks */,
+				33ADDBC3190C80300056EE16 /* MobileCoreServices.framework in Frameworks */,
+				33ADDBC1190C7FFC0056EE16 /* libRestKit.a in Frameworks */,
 				33ADDB64190C416E0056EE16 /* CoreGraphics.framework in Frameworks */,
 				33ADDB66190C416E0056EE16 /* UIKit.framework in Frameworks */,
 				33ADDB62190C416E0056EE16 /* Foundation.framework in Frameworks */,
@@ -77,6 +146,7 @@
 		33ADDB55190C416E0056EE16 = {
 			isa = PBXGroup;
 			children = (
+				33ADDB90190C42100056EE16 /* RestKit.xcodeproj */,
 				33ADDB67190C416E0056EE16 /* phototiles */,
 				33ADDB80190C416E0056EE16 /* phototilesTests */,
 				33ADDB60190C416E0056EE16 /* Frameworks */,
@@ -96,6 +166,8 @@
 		33ADDB60190C416E0056EE16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33ADDBC4190C80370056EE16 /* SystemConfiguration.framework */,
+				33ADDBC2190C80300056EE16 /* MobileCoreServices.framework */,
 				33ADDB61190C416E0056EE16 /* Foundation.framework */,
 				33ADDB63190C416E0056EE16 /* CoreGraphics.framework */,
 				33ADDB65190C416E0056EE16 /* UIKit.framework */,
@@ -107,8 +179,22 @@
 		33ADDB67190C416E0056EE16 /* phototiles */ = {
 			isa = PBXGroup;
 			children = (
+				33ADDBB5190C6A900056EE16 /* Flickr */,
+				33ADDBA9190C53DD0056EE16 /* ThirdParty */,
 				33ADDB70190C416E0056EE16 /* AppDelegate.h */,
 				33ADDB71190C416E0056EE16 /* AppDelegate.m */,
+				33ADDBA2190C47210056EE16 /* PhotoTilesController.h */,
+				33ADDBA3190C47210056EE16 /* PhotoTilesController.m */,
+				33ADDBB2190C5FD90056EE16 /* PhotoTileCell.h */,
+				33ADDBB3190C5FD90056EE16 /* PhotoTileCell.m */,
+				33ADDBA6190C53CD0056EE16 /* URLImageFileCache.m */,
+				33ADDBA7190C53CD0056EE16 /* URLImageFileCache.h */,
+				33ADDBC6190DAC010056EE16 /* ReachabilityOverlayView.m */,
+				33ADDBC7190DAC010056EE16 /* ReachabilityOverlayView.h */,
+				33ADDBC9190DE1D80056EE16 /* UIImage+Luminance.h */,
+				33ADDBCA190DE1D80056EE16 /* UIImage+Luminance.m */,
+				33ADDBA5190C53980056EE16 /* Notifications.h */,
+				33ADDBB1190C54730056EE16 /* Globals.h */,
 				33ADDB73190C416E0056EE16 /* Images.xcassets */,
 				33ADDB68190C416E0056EE16 /* Supporting Files */,
 			);
@@ -142,6 +228,66 @@
 				33ADDB83190C416E0056EE16 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33ADDB91190C42100056EE16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33ADDB98190C42110056EE16 /* libRestKit.a */,
+				33ADDB9A190C42110056EE16 /* RestKitTests.octest */,
+				33ADDB9C190C42110056EE16 /* RestKit.framework */,
+				33ADDB9E190C42110056EE16 /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33ADDBA9190C53DD0056EE16 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				33ADDBAB190C53F80056EE16 /* Reachability */,
+				33ADDBAA190C53F80056EE16 /* NSString+MD5.m */,
+				33ADDBAE190C53F80056EE16 /* NSString+MD5.h */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		33ADDBAB190C53F80056EE16 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				33ADDBAC190C53F80056EE16 /* Reachability.h */,
+				33ADDBAD190C53F80056EE16 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = ThirdPartyAPI/Reachability;
+			sourceTree = "<group>";
+		};
+		33ADDBB5190C6A900056EE16 /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				33ADDBB9190C6B7E0056EE16 /* Controller */,
+				33ADDBBA190C6B880056EE16 /* Model */,
+			);
+			name = Flickr;
+			sourceTree = "<group>";
+		};
+		33ADDBB9190C6B7E0056EE16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33ADDBB6190C6AA90056EE16 /* FlickrManager.h */,
+				33ADDBB7190C6AA90056EE16 /* FlickrManager.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		33ADDBBA190C6B880056EE16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33ADDBBB190C6E390056EE16 /* FlickrPhoto.h */,
+				33ADDBBC190C6E390056EE16 /* FlickrPhoto.m */,
+				33ADDBBE190C6F270056EE16 /* FlickrPhotos.h */,
+				33ADDBBF190C6F270056EE16 /* FlickrPhotos.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +352,12 @@
 			mainGroup = 33ADDB55190C416E0056EE16;
 			productRefGroup = 33ADDB5F190C416E0056EE16 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33ADDB91190C42100056EE16 /* Products */;
+					ProjectRef = 33ADDB90190C42100056EE16 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				33ADDB5D190C416E0056EE16 /* phototiles */,
@@ -213,6 +365,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		33ADDB98190C42110056EE16 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 33ADDB97190C42110056EE16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33ADDB9A190C42110056EE16 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 33ADDB99190C42110056EE16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33ADDB9C190C42110056EE16 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 33ADDB9B190C42110056EE16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33ADDB9E190C42110056EE16 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 33ADDB9D190C42110056EE16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		33ADDB5C190C416E0056EE16 /* Resources */ = {
@@ -239,8 +422,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33ADDBB8190C6AA90056EE16 /* FlickrManager.m in Sources */,
+				33ADDBA8190C53CD0056EE16 /* URLImageFileCache.m in Sources */,
+				33ADDBB4190C5FD90056EE16 /* PhotoTileCell.m in Sources */,
 				33ADDB72190C416E0056EE16 /* AppDelegate.m in Sources */,
+				33ADDBAF190C53F80056EE16 /* NSString+MD5.m in Sources */,
+				33ADDBC8190DAC010056EE16 /* ReachabilityOverlayView.m in Sources */,
 				33ADDB6E190C416E0056EE16 /* main.m in Sources */,
+				33ADDBBD190C6E390056EE16 /* FlickrPhoto.m in Sources */,
+				33ADDBC0190C6F270056EE16 /* FlickrPhotos.m in Sources */,
+				33ADDBB0190C53F80056EE16 /* Reachability.m in Sources */,
+				33ADDBCB190DE1D80056EE16 /* UIImage+Luminance.m in Sources */,
+				33ADDBA4190C47210056EE16 /* PhotoTilesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +556,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "phototiles/phototiles-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "phototiles/phototiles-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -376,6 +574,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "phototiles/phototiles-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "phototiles/phototiles-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
